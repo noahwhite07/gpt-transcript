@@ -1,10 +1,23 @@
 {
-  "manifest_version": 3,
-  "name": "Hello Extensions",
-  "description": "Base Level Extension",
-  "version": "1.0",
-  "action": {
-    "default_popup": "hello.html",
-    "default_icon": "hello_extensions.png"
+    "manifest_version": 3,
+    "name": "Chat Transcript Tool",
+    "version": "1.0",
+    "description": "A simple Chrome extension to generate chat transcripts",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "images/default_icon.png"
+    },
+    "icons": {
+        "16":"images/default_icon.png",
+        "32":"images/default_icon.png",
+        "48":"images/default_icon.png",
+        "128":"images/default_icon.png"
+        
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+      }
+    ]
   }
-}
