@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Chat Transcript Tool",
+    "name": "GPT Transcript",
     "version": "1.0",
-    "description": "A simple Chrome extension to generate chat transcripts from ChatGPT conversations",
+    "description": "A simple Chrome extension for exporting ChatGPT conversations as plaintext transcripts",
     "action": {
         "default_popup": "popup.html",
         "default_icon": "images/default_icon.png"
@@ -17,10 +17,7 @@
     "content_scripts": [
       {
         "matches": [
-            "https://developer.chrome.com/docs/extensions/*",
-            "https://developer.chrome.com/docs/webstore/*",
-            "http://*/*", 
-            "https://*/*"
+          "https://chat.openai.com/chat/*"
         ],
         "js": ["scripts/content.js"]
       }
