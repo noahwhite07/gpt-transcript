@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Chat Transcript Tool",
     "version": "1.0",
-    "description": "A simple Chrome extension to generate chat transcripts",
+    "description": "A simple Chrome extension to generate chat transcripts from ChatGPT conversations",
     "action": {
         "default_popup": "popup.html",
         "default_icon": "images/default_icon.png"
