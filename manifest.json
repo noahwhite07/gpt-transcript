@@ -24,5 +24,10 @@
         ],
         "js": ["scripts/content.js"]
       }
+    ],
+    "permissions": [
+      "scripting",
+      "activeTab"
     ]
+    
   }
