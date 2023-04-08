@@ -1,56 +1,3 @@
-
-
-<!-- <html>
-  <head>
-    <style>
-      body {
-        width: 300px;
-        margin: 0;
-        padding: 10px;
-        background-color: #2C2F33;
-        color: #ffffff;
-      }
-      
-      img {
-        height: 24px;
-        margin-right: 10px;
-        vertical-align: middle;
-      }
-      
-      h1 {
-        display: inline;
-        font-size: 24px;
-      }
-
-      button {
-        background-image: linear-gradient(to right, #3e7fa4, #3ba989);
-        border: none;
-        border-radius: 50px;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-        margin: 15px 2px;
-        cursor: pointer;
-      }
-
-      button:hover {
-        background-image: linear-gradient(to right, #336a85, #30846d);
-      }
-    </style>
-  </head>
-  <body>
-    <h1>
-      <img src="images/default_icon.png" alt="Icon">GPT Transcript
-    </h1>
-    <button id="readHtmlButton">Export Transcript</button>
-    <script src="popup.js"></script>
-  </body>
-</html> -->
-
-
 <html>
   <head>
     <style>
@@ -97,8 +44,21 @@
         display: inline;
         margin-left: 6px;
         margin-bottom: 5px;
-        vertical-align: middle; /* Changed to 'bottom' */
+        vertical-align: middle;
         cursor: pointer;
+      }
+
+      html, body {
+        border-radius: 20px;
+        overflow: hidden;
+      }
+    
+      body::before {
+        content: "";
+        display: block;
+        height: 4px;
+        margin-bottom: 6px;
+        background-image: linear-gradient(to right, #3e7fa4, #3ba989);
       }
 
     </style>
@@ -110,7 +70,7 @@
     <button id="readHtmlButton">Export Transcript</button>
 
     <!-- GitHub logo with a link -->
-    <a href="https://github.com/noahwhite07" target="_blank" title="See the source on GitHub">
+    <a href="https://github.com/noahwhite07/gpt-transcript" target="_blank" title="See the source on GitHub">
       <svg  id="githubLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" height="34" title="See the source on GitHub">
         <defs>
           <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
