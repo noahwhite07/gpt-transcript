@@ -1,5 +1,5 @@
 // Log a message to indicate the content script has been loaded
-console.log("I'm a content script.");
+console.log("Content script loaded");
 
 // Listen for connections from the popup script
 chrome.runtime.onConnect.addListener((port) => {
@@ -11,6 +11,7 @@ chrome.runtime.onConnect.addListener((port) => {
 
       // Check if the action is to export the transcript
       if (request.action === "exportTranscript") {
+
         // Define class names for the outer divs corresponding to each user
         const user1ClassName = "group w-full text-gray-800 dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 dark:bg-gray-800";
         const user2ClassName = "group w-full text-gray-800 dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 bg-gray-50 dark:bg-[#444654]";

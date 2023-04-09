@@ -1,5 +1,5 @@
 // Log a message to indicate the popup script has been loaded
-console.log("This is a popup!");
+console.log("Popup script loaded");
 
 // Add a click event listener for the "Read HTML" button
 document.getElementById("readHtmlButton").addEventListener("click", () => {
